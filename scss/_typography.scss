@@ -1,10 +1,29 @@
+body {
+  color: $color-neutral-gray-blue;
+}
+
 .heading-secondary {
   font-size: 1.6rem;
+  color: $color-neutral-dark-blue;
 
   &--thin {
     font-weight: 200;
   }
+
   &--bold {
     font-weight: 600;
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.heading-tertiary {
+  color: $color-neutral-dark-blue;
+  font-size: 1.2rem;
+
+  &:not(:last-child) {
+    margin-bottom: 0.3em;
   }
 }

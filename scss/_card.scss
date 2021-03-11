@@ -1,47 +1,44 @@
 .card {
-  height: 300px;
-  max-width: 350px;
-  // margin: 0 auto;
-  padding: 2rem;
-  background-color: $color-neutral-light-gray;
-  border-radius: 5px;
+  max-width: 400px;
   border-top: 4px solid transparent;
-
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-  &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
+  border-radius: 5px;
+  box-shadow: 0 5px 6px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  justify-self: center;
+  position: relative;
 
   &--cyan {
     border-color: $color-primary-cyan;
 
     @media (min-width: 900px) {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      transform: translateY(-60%);
+      position: relative;
+      top: 60%;
     }
   }
 
   &--red {
     border-color: $color-primary-red;
-
-    @media (min-width: 900px) {
-      grid-column: 2 / 3;
-    }
   }
 
   &--orange {
     border-color: $color-primary-orange;
 
     @media (min-width: 900px) {
-      grid-column: 2 / 3;
+      position: relative;
+      top: 60%;
     }
   }
 
   &--blue {
     border-color: $color-neutral-dark-blue;
-    transform: translateY(-60%);
+
+    @media (min-width: 900px) {
+      grid-column: 2/3;
+    }
+  }
+
+  &__img {
+    float: right;
+    margin-top: 1.2rem;
   }
 }
