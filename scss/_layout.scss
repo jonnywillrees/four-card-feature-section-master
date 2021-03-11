@@ -1,0 +1,18 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3rem;
+  justify-items: center;
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.header {
+  @media (min-width: 900px) {
+    grid-column: 2 / 3;
+  }
+}
